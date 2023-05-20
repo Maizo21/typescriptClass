@@ -8,6 +8,12 @@ export class MyDate {
     this.month = month;
     this.year = year;
   }
+
+  printFormat(): string {
+    return `${this.day}/${this.month}/${this.year}`;
+  }
 }
 
-const myDate = new MyDate(1, 1, 2023);
+const mydate = new MyDate(1, 10, 1994);
+
+console.log(mydate.printFormat());
